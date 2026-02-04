@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Overview
 This project is an API-based system that analyzes an audio sample and determines whether the voice is Human or AI-generated.
 It also automatically detects the spoken language.
@@ -120,3 +121,7 @@ Audio tampering detection
 Cross-language robustness scoring
 Real-time streaming support
 
+=======
+# INDIC-VOICE-GUARD
+API to detect AI-generated vs human voice across multiple languages
+>>>>>>> 56da4e91b600516c049ac3ea568c04a09016e0d4
