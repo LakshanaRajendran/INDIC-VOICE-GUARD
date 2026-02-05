@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Header, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 
@@ -11,7 +12,6 @@ from features import (
     extract_breath_silence_features,
     segment_drift_score
 )
-
 from detector import (
     detect_voice,
     detect_segment_consistency,
@@ -21,6 +21,15 @@ from detector import (
 API_KEY = "sk_test_123456789"
 
 app = FastAPI()
+
+# Enable CORS for frontend communication
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class VoiceRequest(BaseModel):
     audioFormat: str
@@ -72,3 +81,6 @@ def voice_detection(request: VoiceRequest, x_api_key: str = Header(None)):
         "segmentDrift": drift_result,
         "explanation": explanation
     }
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)

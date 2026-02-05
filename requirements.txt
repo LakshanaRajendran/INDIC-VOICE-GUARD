@@ -5,3 +5,5 @@ numpy
 openai-whisper
 torch
 soundfile
+streamlit
+requests

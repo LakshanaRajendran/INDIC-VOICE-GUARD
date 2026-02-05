@@ -1,7 +1,7 @@
 import whisper
 
 
-model = whisper.load_model("tiny")
+model = whisper.load_model("base")
 
 
 LANGUAGE_MAP = {
