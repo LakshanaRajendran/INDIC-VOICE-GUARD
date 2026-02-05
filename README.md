@@ -13,6 +13,11 @@ It also automatically detects the spoken language from the audio.
 The solution is designed to work across multiple Indian and global languages and focuses on audio signal behavior, not heavy machine-learning training.
 
 ---
+## 🚀 Project Demo
+
+![Demo 1](images/demo1.jpeg)
+![Demo 2](images/demo2.jpeg)
+
 
 ## Problem Being Solved
 
