@@ -14,10 +14,11 @@ The solution is designed to work across multiple Indian and global languages and
 
 ---
 ## 🚀 Project Demo
-
+## Frontend
 ![Demo 1](images/demo1.jpeg)
 ![Demo 2](images/demo2.jpeg)
-
+## Backend
+![Demo 2](images/demo3.jpeg)
 
 ## Problem Being Solved
 
